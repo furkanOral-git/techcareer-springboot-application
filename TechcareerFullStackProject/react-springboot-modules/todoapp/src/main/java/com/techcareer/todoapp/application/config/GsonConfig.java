@@ -13,7 +13,7 @@ public class GsonConfig {
     public Gson gson(){
         return new Gson();
     }
-    //Controller'dan geri döndürülecek veriyi jsona çevirmesi için gson kütüphanesi kullanılıyor.
+    //Serilazation işlemleri için
     @Bean
     public GsonHttpMessageConverter gsonHttpMessageConverter() {
         GsonHttpMessageConverter converter = new GsonHttpMessageConverter();
